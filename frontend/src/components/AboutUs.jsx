@@ -1,4 +1,6 @@
 import React from 'react';
+
+
 import {
     Target,
     Heart,
@@ -14,6 +16,7 @@ import {
 import Navbar from './Navbar';
 import Footer from './Footer';
 import './AboutUs.css';
+import avatar from '../assets/avatar.png';
 
 const AboutUs = () => {
     const values = [
@@ -49,18 +52,18 @@ const AboutUs = () => {
     const team = [
         {
             name: 'Muhammad Ahmed',
-            role: 'Founder & CEO',
-            image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80'
+            role: 'Frontend Developer',
+            image: avatar
         },
         {
             name: 'Fatima Hassan',
-            role: 'Chief Operations Officer',
-            image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80'
+            role: 'Backend Developer',
+            image: avatar
         },
         {
             name: 'Ali Raza',
-            role: 'Head of Technology',
-            image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80'
+            role: 'Design Lead & Backend Developer',
+            image: avatar
         }
     ];
 
