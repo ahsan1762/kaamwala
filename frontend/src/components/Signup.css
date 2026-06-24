@@ -1,0 +1,61 @@
+/* Signup.css */
+.signup-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #042f24 100%);
+    position: relative;
+}
+
+.signup-card {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    z-index: 10;
+}
+
+.strength-meter {
+    display: flex;
+    gap: 4px;
+    height: 6px;
+    margin-top: 8px;
+}
+
+.strength-bar {
+    flex: 1;
+    border-radius: 4px;
+    background-color: var(--gray-light);
+    transition: background-color 0.3s;
+}
+
+.strength-bar.active-red {
+    background-color: var(--danger);
+}
+
+.strength-bar.active-yellow {
+    background-color: #eab308;
+}
+
+.strength-bar.active-green {
+    background-color: var(--success);
+}
+
+.strength-text {
+    font-size: 11px;
+    text-align: right;
+    margin-top: 4px;
+    color: var(--gray-text);
+}
+
+.terms-error {
+    color: var(--danger);
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 24px;
+}

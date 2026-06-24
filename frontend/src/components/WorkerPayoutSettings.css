@@ -1,0 +1,268 @@
+.payout-settings-new {
+    padding: 0;
+}
+
+.payout-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+/* Balance Section */
+.balance-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.balance-card {
+    background: linear-gradient(135deg, #07614A 0%, #054A39 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(7, 97, 74, 0.3);
+}
+
+.balance-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.balance-header svg {
+    opacity: 0.9;
+}
+
+.balance-header h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.balance-display {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.balance-amount {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.balance-subtitle {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+/* Active Methods */
+.active-methods {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #e5e7eb;
+}
+
+.active-methods h4 {
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.methods-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.method-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    background: #f0fdf4;
+    border-left: 3px solid #10b981;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.method-item svg {
+    color: #10b981;
+    flex-shrink: 0;
+}
+
+.no-methods {
+    text-align: center;
+    color: #9ca3af;
+    font-size: 13px;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Form Section */
+.form-section {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.form-header svg {
+    color: #07614A;
+}
+
+.form-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.payout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+.method-select,
+.form-input {
+    padding: 12px 14px;
+    border: 1.5px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background-color: #fafbfc;
+}
+
+.method-select,
+.form-input {
+    cursor: pointer;
+}
+
+.method-select:focus,
+.form-input:focus {
+    outline: none;
+    border-color: #07614A;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(7, 97, 74, 0.1);
+}
+
+.method-select.error,
+.form-input.error {
+    border-color: #ef4444;
+}
+
+.form-input.error:focus {
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.form-group small {
+    display: block;
+    color: #9ca3af;
+    font-size: 12px;
+    margin-top: 6px;
+    font-style: italic;
+}
+
+.error-text {
+    display: block;
+    color: #ef4444;
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.submit-btn {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #07614A 0%, #054A39 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(7, 97, 74, 0.3);
+}
+
+.submit-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .payout-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .payout-settings-new {
+        padding: 0;
+    }
+
+    .balance-card {
+        padding: 20px;
+    }
+
+    .balance-header {
+        gap: 10px;
+    }
+
+    .balance-header h3 {
+        font-size: 14px;
+    }
+
+    .balance-amount {
+        font-size: 28px;
+    }
+
+    .form-section {
+        padding: 20px;
+    }
+
+    .form-header h3 {
+        font-size: 16px;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    .method-item {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
