@@ -1,4 +1,4 @@
-# 🚀 KaamWala Docker
+# KaamWala Docker
 
 A full-stack MERN application that connects customers with skilled workers such as electricians, plumbers, carpenters, and mechanics.
 
@@ -6,7 +6,7 @@ This repository contains the Dockerized version of the project along with Docker
 
 ---
 
-# ✨ Features
+#  Features
 
 - User Authentication (JWT)
 - Customer & Worker Registration
@@ -21,7 +21,7 @@ This repository contains the Dockerized version of the project along with Docker
 
 ---
 
-# 🛠️ Tech Stack
+#  Tech Stack
 
 ## Frontend
 
@@ -49,7 +49,7 @@ This repository contains the Dockerized version of the project along with Docker
 
 ---
 
-# 📂 Project Structure
+#  Project Structure
 
 ```
 backend/
@@ -61,7 +61,7 @@ docker-compose.yml
 
 ---
 
-# 🚀 Run Locally
+#  Run Locally
 
 ```bash
 git clone https://github.com/ahsan1762/kaamwala-docker.git
@@ -71,7 +71,7 @@ cd kaamwala-docker
 docker compose up --build
 ```
 
-# 📈 Future Improvements
+#  Future Improvements
 
 - Jenkins CI/CD
 - Kubernetes Deployment
@@ -81,10 +81,10 @@ docker compose up --build
 
 ---
 
-# 👨‍💻 Author
+#  Author
 
 **Muhammad Ahsan**
 
 Computer Science Student
 
-Aspiring DevOps Engineer
+
