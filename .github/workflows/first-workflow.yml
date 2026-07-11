@@ -1,4 +1,4 @@
-name: KaamWala Frontend CI
+name: KaamWala CI Pipeline
 
 on:
   push:
@@ -7,6 +7,7 @@ on:
 
 jobs:
   frontend-build:
+    name: Frontend Build
     runs-on: ubuntu-latest
 
     defaults:
@@ -22,8 +23,29 @@ jobs:
         with:
           node-version: 22
 
-      - name: Install Dependencies
+      - name: Install Frontend Dependencies
         run: npm install
 
       - name: Build React Application
         run: npm run build
+
+  backend-build:
+    name: Backend Dependency Check
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: backend
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Backend Dependencies
+        run: npm install
+
