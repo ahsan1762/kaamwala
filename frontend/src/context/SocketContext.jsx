@@ -11,12 +11,15 @@ export const SocketProvider = ({ children }) => {
     const [socket, setSocket] = useState(null);
 
     useEffect(() => {
-        // Initialize socket connection
-        const newSocket = io(import.meta.env.VITE_API_URL || 'http://localhost:5000'); // Backend URL
+        // Connect to the same origin (handled by Nginx reverse proxy)
+        const newSocket = io();
+
         setSocket(newSocket);
 
         // Cleanup on unmount
-        return () => newSocket.close();
+        return () => {
+            newSocket.close();
+        };
     }, []);
 
     return (
@@ -25,3 +28,5 @@ export const SocketProvider = ({ children }) => {
         </SocketContext.Provider>
     );
 };
+
+export default SocketContext;
