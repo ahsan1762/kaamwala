@@ -1,18 +1,17 @@
 # 🚀 KaamWala
 
-A production-ready Dockerized MERN application that connects customers with skilled workers including electricians, plumbers, carpenters, mechanics, and other service providers.
+A production-ready MERN application that connects customers with skilled workers such as electricians, plumbers, carpenters, mechanics, and other service providers.
 
-The project demonstrates a complete DevOps workflow from local development to automated deployment on a Linux VPS using GitHub Actions, Docker, Docker Hub, and Nginx.
+This project demonstrates a complete DevOps workflow from local development to automated deployment on an Ubuntu VPS using Docker, Docker Compose, GitHub Actions, Docker Hub, and Nginx Reverse Proxy.
 
 ---
 
-## ✨ Features
+## 🌟 Features
 
 - 🔐 JWT Authentication
-- 👤 Customer Registration
-- 👷 Worker Registration
+- 👤 Customer & Worker Registration
 - 🛠️ Admin Dashboard
-- 📅 Booking System
+- 📅 Service Booking System
 - ⭐ Reviews & Ratings
 - 💬 Real-Time Chat (Socket.IO)
 - 📦 Dockerized Frontend & Backend
@@ -20,7 +19,7 @@ The project demonstrates a complete DevOps workflow from local development to au
 - ⚡ GitHub Actions CI/CD
 - 🚀 Automatic VPS Deployment
 - 🌐 Nginx Reverse Proxy
-- 🗄️ MongoDB Atlas
+- ☁️ MongoDB Atlas
 - 🐧 Linux Server Deployment
 
 ---
@@ -57,30 +56,113 @@ The project demonstrates a complete DevOps workflow from local development to au
 
 ```
                 Git Push
-                   │
-                   ▼
+                    │
+                    ▼
           GitHub Actions CI/CD
-                   │
-                   ▼
-          Docker Image Build
-                   │
-                   ▼
-             Docker Hub
-                   │
-                   ▼
-             Linux VPS
-                   │
-        Docker Compose Pull
-                   │
-                   ▼
-              Nginx Proxy
-                   │
-        ┌──────────┴──────────┐
-        ▼                     ▼
-   React Frontend       Node.js Backend
-                                │
-                                ▼
+                    │
+                    ▼
+          Build Docker Images
+                    │
+                    ▼
+              Push to Docker Hub
+                    │
+                    ▼
+             Ubuntu Linux VPS
+                    │
+          Docker Compose Pull
+                    │
+                    ▼
+             Nginx Reverse Proxy
+                    │
+        ┌───────────┴───────────┐
+        ▼                       ▼
+ React Frontend          Node.js Backend
+                                  │
+                                  ▼
                            MongoDB Atlas
+```
+
+---
+
+# 📸 Screenshots
+
+## 🏠 Home Page
+
+> <img width="959" height="516" alt="homepage" src="https://github.com/user-attachments/assets/251f672b-1400-478f-b33b-6724c85b9330" />
+
+
+```markdown
+![Home](docs/homepage.png)
+```
+
+---
+
+## 🔐 Login Page
+
+> *(Insert screenshot here)*
+
+```markdown
+![Login](docs/login.png)
+```
+
+---
+
+## 👤 Customer Dashboard
+
+> *(Insert screenshot here)*
+
+```markdown
+![Customer](docs/customer-dashboard.png)
+```
+
+---
+
+## 👷 Worker Dashboard
+
+> *(Insert screenshot here)*
+
+```markdown
+![Worker](docs/worker-dashboard.png)
+```
+
+---
+
+## 🛠️ Admin Dashboard
+
+> *(Insert screenshot here)*
+
+```markdown
+![Admin](docs/admin-dashboard.png)
+```
+
+---
+
+## 🐳 Docker Containers
+
+> *(Insert screenshot here)*
+
+```markdown
+![Docker](docs/docker-containers.png)
+```
+
+---
+
+## ⚡ GitHub Actions CI/CD
+
+> *(Insert screenshot here)*
+
+```markdown
+![GitHub Actions](docs/github-actions.png)
+```
+
+---
+
+## 🌐 Live Deployment
+
+> *(Insert screenshot here)*
+
+```markdown
+![Deployment](docs/live-deployment.png)
 ```
 
 ---
@@ -91,7 +173,7 @@ The project demonstrates a complete DevOps workflow from local development to au
 backend/
 frontend/
 docs/
-.github/workflows/
+.github/
 docker-compose.yml
 README.md
 ```
@@ -101,39 +183,70 @@ README.md
 # 🚀 Run Locally
 
 ```bash
-git clone https://github.com/ahsan1762/kaamwala-docker.git
+git clone https://github.com/ahsan1762/kaamwala.git
 
-cd kaamwala-docker
+cd kaamwala
 
 docker compose up --build
 ```
 
 ---
 
-# 🌐 Production Deployment
+# ⚙️ CI/CD Workflow
 
-The project is automatically deployed using GitHub Actions.
+The deployment process is fully automated using GitHub Actions.
 
-Deployment workflow:
+```
+Developer Push
+      │
+      ▼
+GitHub Repository
+      │
+      ▼
+GitHub Actions
+      │
+      ▼
+Build Docker Images
+      │
+      ▼
+Push Images to Docker Hub
+      │
+      ▼
+SSH into Ubuntu VPS
+      │
+      ▼
+docker compose pull
+      │
+      ▼
+docker compose up -d
+      │
+      ▼
+Application Updated 🚀
+```
 
-- Push code to GitHub
-- GitHub Actions builds Docker images
-- Images are pushed to Docker Hub
-- VPS pulls latest images
-- Docker Compose updates containers
-- Nginx serves the application
+---
+
+# 🌍 Production Stack
+
+- Ubuntu 24.04 VPS
+- Docker
+- Docker Compose
+- Nginx Reverse Proxy
+- GitHub Actions
+- Docker Hub
+- MongoDB Atlas
 
 ---
 
 # 📈 Future Improvements
 
-- ☁️ AWS EC2 Deployment
+- ☁️ AWS Deployment
 - ☸️ Kubernetes
 - 🏗️ Terraform Infrastructure
 - 📊 Prometheus Monitoring
 - 📉 Grafana Dashboard
-- 🔒 HTTPS using Let's Encrypt
-  
+- 🔒 HTTPS with Let's Encrypt
+- 🤖 AI-Powered Service Recommendation
 
 ---
 
@@ -142,3 +255,5 @@ Deployment workflow:
 **Muhammad Ahsan**
 
 Computer Science Student
+
+- GitHub: https://github.com/ahsan1762
