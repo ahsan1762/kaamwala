@@ -1,4 +1,9 @@
 # 🚀 KaamWala
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 
 A production-ready MERN application that connects customers with skilled workers such as electricians, plumbers, carpenters, mechanics, and other service providers.
 
@@ -92,77 +97,76 @@ This project demonstrates a complete DevOps workflow from local development to a
 
 
 ```markdown
-![Home](docs/homepage.png)
+
 ```
 
 ---
 
 ## 🔐 Login Page
 
-> *(Insert screenshot here)*
+> <img width="959" height="516" alt="login" src="https://github.com/user-attachments/assets/183624c2-d040-4d81-b3dc-f7df5f0dc217" />
+
 
 ```markdown
-![Login](docs/login.png)
+
 ```
 
 ---
 
 ## 👤 Customer Dashboard
 
-> *(Insert screenshot here)*
+> <img width="959" height="506" alt="custumer dashboard" src="https://github.com/user-attachments/assets/4a37f704-5d55-43b5-9f01-8bad22d4159a" />
+
 
 ```markdown
-![Customer](docs/customer-dashboard.png)
+
 ```
 
 ---
 
 ## 👷 Worker Dashboard
 
-> *(Insert screenshot here)*
+> <img width="959" height="510" alt="worker dashboard" src="https://github.com/user-attachments/assets/f2910aac-9a85-4b65-b5e0-f0f07e90d7c6" />
+
 
 ```markdown
-![Worker](docs/worker-dashboard.png)
+
 ```
 
 ---
 
 ## 🛠️ Admin Dashboard
 
-> *(Insert screenshot here)*
+> <img width="959" height="518" alt="admin dashboard" src="https://github.com/user-attachments/assets/5980632d-223d-4e94-bf87-cc9300c0b4db" />
+
 
 ```markdown
-![Admin](docs/admin-dashboard.png)
+
 ```
 
 ---
 
 ## 🐳 Docker Containers
 
-> *(Insert screenshot here)*
+> <img width="945" height="91" alt="Dcoker Container" src="https://github.com/user-attachments/assets/a0867dde-d88e-4a5a-9360-4905c7b68b5b" />
 
 ```markdown
-![Docker](docs/docker-containers.png)
+
 ```
 
 ---
 
 ## ⚡ GitHub Actions CI/CD
 
-> *(Insert screenshot here)*
+> <img width="959" height="389" alt="cicd" src="https://github.com/user-attachments/assets/59094098-1157-4526-8037-f2ee33e8ff89" />
+
 
 ```markdown
-![GitHub Actions](docs/github-actions.png)
+
 ```
 
 ---
 
-## 🌐 Live Deployment
-
-> *(Insert screenshot here)*
-
-```markdown
-![Deployment](docs/live-deployment.png)
 ```
 
 ---
